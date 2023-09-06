@@ -43,5 +43,7 @@ The results for each news source will be joined in a table for side-by-side comp
 
 ## Future Enhancements
 Some improvements that are on the way:
-1.) More new sources
-2.) Headlines tailored to specific regions or countries through user input
+
+- More news sources
+- Headlines tailored to specific regions or countries through user input
+
