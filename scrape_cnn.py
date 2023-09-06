@@ -9,10 +9,6 @@ def fetch_news_cnn():
 
     title_section = soup.find('h2', class_='container__title-text container_list-headlines__title-text', string="More top stories")
     
-    for sibling in title_section.find_next_siblings(limit=5):
-        print(sibling)
-        print("-----")
-    
     headlines_div = title_section.find_next('div', class_='container_list-headlines__cards-wrapper')
     
     if not headlines_div:
@@ -24,8 +20,8 @@ def fetch_news_cnn():
 
     return headlines_text
 
-news = fetch_news_cnn()
-if news:
-    for headline in news:
-        print(headline)
-        print("---")
+# news = fetch_news_cnn()
+# if news:
+#     for headline in news:
+#         print(headline)
+#         print("---")

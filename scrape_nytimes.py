@@ -10,7 +10,10 @@ def fetch_news_nytimes():
     headlines_text = [headline.text for headline in headlines[:10]]
 
     return headlines_text
-news = fetch_news_nytimes()
-for item in news:
-    print(item)
-    print("---")
+
+
+
+# news = fetch_news_nytimes()
+# for item in news:
+#     print(item)
+#     print("---")
