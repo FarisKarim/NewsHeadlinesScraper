@@ -7,7 +7,7 @@ def main():
     print("CNN")
     print("FOX")
     print("NYT")
-    print("All")
+    print("All\n")
 
     choices = [choice.lower() for choice in input().split()]
     selected = set()
