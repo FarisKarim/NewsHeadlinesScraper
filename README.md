@@ -31,9 +31,11 @@ Headline Scraper is a tool designed to fetch and compare headlines from leading 
 
 ## Usage
 
-1.) Select the news sources you want
+Select the news sources you want
+
 ![Search Image](./images/search.png)
 
 The results for each news source will be joined in a table for side-by-side comparison.
+
 ![Results Image](./images/results.png)
 
