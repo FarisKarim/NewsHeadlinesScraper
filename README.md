@@ -2,7 +2,7 @@
 
 ## Description
 
-Headline Scraper is a tool designed to fetch and compare headlines from leading news sources like BBC, CNN, FOX, and NYT. 
+A tool designed to fetch and compare headlines from leading news sources like BBC, CNN, FOX, and NYT. 
 
 
 ## Features
