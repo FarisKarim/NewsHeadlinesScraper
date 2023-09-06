@@ -19,7 +19,6 @@ def fetch_news_bbc():
             headline_text = headline_elem.text.strip()
             description_text = description_elem.text.strip()
 
-            # Check if we haven't seen this headline yet and we haven't reached 5 items
             if headline_text not in seen_headlines and len(news_data) < 5:
                 seen_headlines.add(headline_text)
                 news_data.append({
