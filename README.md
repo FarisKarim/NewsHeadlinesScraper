@@ -46,4 +46,5 @@ Some improvements that are on the way:
 
 - More news sources
 - Headlines tailored to specific regions or countries through user input
+- Add tech sites for tech news
 
