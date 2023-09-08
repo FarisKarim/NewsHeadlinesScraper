@@ -1,7 +1,5 @@
 from print_headlines import print_headlines_table
 
-# If you have a function in scrape_ars.py to fetch headlines, import it
-# from scrape_ars import fetch_ars_headlines
 
 def main():
     print('Welcome to the Headlines Scraper!\n')
