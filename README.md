@@ -19,12 +19,17 @@ A tool designed to fetch and compare headlines from leading news sources like BB
    ```
 2.) Navigate to the project directory
 
-3.) Install the required libraries and dependencies:
+3.) Activate the virtual environment:
+   ```bash
+   source venv/bin/activate
+   ```
+
+4.) Install the required libraries and dependencies:
    ```bash
    pip3 install -r requirements.txt
    ```
 
-4.) Run the scraper with python3 main.py
+5.) Run the scraper with python3 main.py
    ```bash
    python3 main.py
    ```
