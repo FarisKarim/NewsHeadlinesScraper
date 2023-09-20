@@ -53,3 +53,11 @@ Some improvements that are on the way:
 - Headlines tailored to specific regions or countries through user input
 - Add tech sites for tech news
 
+## Current News Sources
+
+- CNN
+- BBC
+- NYT
+- FOX
+- CBS
+- Ars Technica
