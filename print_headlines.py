@@ -3,13 +3,14 @@ from scrape_cnn import fetch_news_cnn
 from scrape_foxnews import fetch_fox_news
 from scrape_nytimes import fetch_news_nytimes
 from scrape_ars import fetch_ars_headlines
+from scrape_cbs import fetch_news_cbs
 from prettytable import PrettyTable, ALL
 
 
 def print_headlines_table(*sources):
     table = PrettyTable()
     table._max_width = {"BBC": 40, "CNN": 40,
-                        "FOX": 40, "NYT": 40, "ArsTechnica": 40}
+                        "FOX": 40, "NYT": 40, "ArsTechnica": 40, "CBS": 40}
 
     if 'BBC' in sources:
         bbc_headlines = fetch_news_bbc()
@@ -18,6 +19,13 @@ def print_headlines_table(*sources):
             bbc_headlines.append("")
         while len(bbc_headlines) > 10:
             bbc_headlines.pop()
+    if 'CBS' in sources:
+        cbs_headlines = fetch_news_cbs()
+        table.add_column("CBS", cbs_headlines)
+        while len(cbs_headlines) < 10:
+            cbs_headlines.append("")
+        while len(cbs_headlines) > 10:
+            cbs_headlines.pop()
     if 'CNN' in sources:
         cnn_headlines = fetch_news_cnn()
         while len(cnn_headlines) < 10:

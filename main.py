@@ -25,13 +25,14 @@ def main():
         print("CNN")
         print("FOX")
         print("NYT")
+        print("CBS")
         print("All\n")
 
         choices = [choice.lower() for choice in input().split()]
         selected = set()
 
         if 'all' in choices:
-            selected.update(['BBC', 'CNN', 'FOX', 'NYT'])
+            selected.update(['BBC', 'CNN', 'FOX', 'NYT, CBS'])
         if 'bbc' in choices:
             selected.add('BBC')
         if 'cnn' in choices:
@@ -40,7 +41,8 @@ def main():
             selected.add('FOX')
         if 'nyt' in choices:
             selected.add('NYT')
-        
+        if 'cbs' in choices:
+            selected.add('CBS')
         if not selected:
             print('No valid sources selected.')
             return
