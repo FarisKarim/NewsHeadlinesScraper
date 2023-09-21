@@ -32,7 +32,7 @@ def main():
         selected = set()
 
         if 'all' in choices:
-            selected.update(['BBC', 'CNN', 'FOX', 'NYT, CBS'])
+            selected.update(['BBC', 'CNN', 'FOX', 'NYT', 'CBS'])
         if 'bbc' in choices:
             selected.add('BBC')
         if 'cnn' in choices:
