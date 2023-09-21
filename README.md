@@ -45,14 +45,6 @@ The results for each news source will be joined in a table for side-by-side comp
 ![Results Image](./images/results.png)
 
 
-
-## Future Enhancements
-Some improvements that are on the way:
-
-- More news sources
-- Headlines tailored to specific regions or countries through user input
-- Add tech sites for tech news
-
 ## Current News Sources
 
 - CNN
@@ -61,3 +53,10 @@ Some improvements that are on the way:
 - FOX
 - CBS
 - Ars Technica
+
+## Future Enhancements
+Some improvements that are on the way:
+
+- More news sources
+- Headlines tailored to specific regions or countries through user input
+- Add tech sites for tech news
