@@ -7,16 +7,10 @@ def fetch_news_cnn():
     response = requests.get(URL)
     soup = BeautifulSoup(response.content, 'html.parser')
 
-    title_section = soup.find('h2', class_='container__title-text container_list-headlines__title-text', string="More top stories")
-    
-    headlines_div = title_section.find_next('div', class_='container_list-headlines__cards-wrapper')
-    
-    if not headlines_div:
-        print("Headlines container not found.")
-        return
-    
-    headlines = headlines_div.find_all('span', attrs={"data-editable": "headline"})
-    headlines_text = [headline.text for headline in headlines]
+    headlines = soup.find_all(lambda tag: 'class' in tag.attrs and 'headline' in ''.join(
+        tag['class']) and ((tag.get('data-editable') == 'headline') or (tag.get('data.editable' == 'title'))))
+
+    headlines_text = [headline.text for headline in headlines if len(headline.text.split()) > 4][:15]
 
     return headlines_text
 
